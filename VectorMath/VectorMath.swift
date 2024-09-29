@@ -37,25 +37,25 @@ import Foundation
 
 public typealias Scalar = Float
 
-public struct Vector2: Hashable {
+public struct Vector2: Hashable, Codable {
     public var x: Scalar
     public var y: Scalar
 }
 
-public struct Vector3: Hashable {
+public struct Vector3: Hashable, Codable {
     public var x: Scalar
     public var y: Scalar
     public var z: Scalar
 }
 
-public struct Vector4: Hashable {
+public struct Vector4: Hashable, Codable {
     public var x: Scalar
     public var y: Scalar
     public var z: Scalar
     public var w: Scalar
 }
 
-public struct Matrix3: Hashable {
+public struct Matrix3: Hashable, Codable {
     public var m11: Scalar
     public var m12: Scalar
     public var m13: Scalar
@@ -67,7 +67,7 @@ public struct Matrix3: Hashable {
     public var m33: Scalar
 }
 
-public struct Matrix4: Hashable {
+public struct Matrix4: Hashable, Codable {
     public var m11: Scalar
     public var m12: Scalar
     public var m13: Scalar
@@ -86,7 +86,7 @@ public struct Matrix4: Hashable {
     public var m44: Scalar
 }
 
-public struct Quaternion: Hashable {
+public struct Quaternion: Hashable, Codable {
     public var x: Scalar
     public var y: Scalar
     public var z: Scalar

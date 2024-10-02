@@ -114,6 +114,13 @@ public extension Scalar {
 
 // MARK: Vector2
 
+extension Vector2 {
+    
+    init(_ x: Scalar, _ y: Scalar) {
+        self.init(x: x, y: y)
+    }
+}
+
 public extension Vector2 {
     static let zero = Vector2(0, 0)
     static let x = Vector2(1, 0)
@@ -129,10 +136,6 @@ public extension Vector2 {
 
     var inverse: Vector2 {
         return -self
-    }
-
-    init(_ x: Scalar, _ y: Scalar) {
-        self.init(x: x, y: y)
     }
 
     init(_ v: [Scalar]) {

@@ -40,6 +40,11 @@ public typealias Scalar = Float
 public struct Vector2: Hashable, Codable {
     public var x: Scalar
     public var y: Scalar
+
+    public init(x: Scalar, y: Scalar) {
+        self.x = x
+        self.y = y
+    }
 }
 
 public struct Vector3: Hashable, Codable {

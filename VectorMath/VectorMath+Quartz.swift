@@ -41,18 +41,22 @@ public extension CGPoint {
     init(_ v: Vector2) {
         self.init(x: CGFloat(v.x), y: CGFloat(v.y))
     }
+    
+    var vector2: Vector2 { Vector2(self) }
 }
 
 public extension CGSize {
     init(_ v: Vector2) {
         self.init(width: CGFloat(v.x), height: CGFloat(v.y))
     }
+    var vector2: Vector2 { Vector2(self) }
 }
 
 public extension CGVector {
     init(_ v: Vector2) {
         self.init(dx: CGFloat(v.x), dy: CGFloat(v.y))
     }
+    var vector2: Vector2 { Vector2(self) }
 }
 
 public extension CGAffineTransform {
@@ -63,6 +67,7 @@ public extension CGAffineTransform {
             tx: CGFloat(m.m31), ty: CGFloat(m.m32)
         )
     }
+    var matrix3: Matrix3 { Matrix3(self) }
 }
 
 public extension CATransform3D {
